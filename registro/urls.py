@@ -6,6 +6,7 @@ from django.urls import path, include
 urlpatterns = [
     path('registro/', UsuarioCreateView.as_view(), name='registro'),
     path('admin/', admin.site.urls),
-    path('api/', include('registro.urls')),  # Ruta para la API
+    # esta es la ruta para la api 
+    path('api/', include('registro.urls')),  
 ]
 
